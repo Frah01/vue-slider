@@ -50,10 +50,8 @@
     object-fit: cover;
 }
 
-.thumb.active {
-    border: 2px solid #ccc;
-    opacity: 1;
-}
+
+
 
 .prev, .next {
     width: 20px;
@@ -102,4 +100,13 @@ oppure i caratteri ∧ (&and;) e ∨ (&or;)
     bottom: 35%;
     left: 50%;
     transform: translate(-50%) rotate(135deg);
+}
+
+.thumb {
+    opacity: 0.5;
+    width: 100%;
+}
+.active {
+    border: 2px solid #ccc;
+    opacity: 1;
 }
