@@ -30,9 +30,8 @@
                     <div class="prev" @click="prev()">
                     </div>
                     <div class="next" @click="next()"></div>
-                    <div class="thumb"v-for="(element, index) in slides" :class="(index === activeImage) ? 'active' : '' ">
+                    <div class="thumb" v-for="(element, index) in slides" :class="(activeImage === index ) ? 'active' : '' ">
                         <img :src="element.image" alt="thumbnail" @click="changeImage(index)"/>
-
                 </div>
                 <div class="buttons" >
                     <button @click="startAutoplay()"  class="btn btn-play" ><i class="fa-solid fa-play"></i></button>
