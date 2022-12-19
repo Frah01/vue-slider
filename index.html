@@ -16,10 +16,10 @@
             <div class="slider-wrapper" tabindex="0">
 
                 <div class="item">
-                    <img v-for="images in slides"  :src="images.image">
+                    <img  :src="slides[activeItem].image">
                     <div class="text">
-                        <h3 v-for="titles in slides" v-text="titles.title" ></h3>
-                        <p v-for="descriptions in slides" v-text="descriptions.text">
+                        <h3  v-text="slides[activeItem].title" ></h3>
+                        <p  v-text="slides[activeItem].text">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit
                             tempore aliquid deleniti aut
                             veniam inventore eligendi ex ad ullam, cumque provident totam omnis, magnam dolores dolorum
