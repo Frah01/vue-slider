@@ -1,5 +1,5 @@
 const { createApp } = Vue
-
+let autoplay= null;
   createApp({
     data() {
       return {
@@ -46,6 +46,16 @@ const { createApp } = Vue
             if(this.activeItem < 0){
                 this.activeItem = this.slides.length -1;
             }
+        },
+
+        startAutoplay(){
+            this.autoplay= setInterval(()=> {
+                this.next()
+            },1000)
+        },
+        stopAutoplay() {
+            clearInterval(this.autoplay);
+            this.autoplay= null
         }
     }
   }).mount('#app')
