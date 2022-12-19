@@ -148,7 +148,7 @@ oppure i caratteri ∧ (&and;) e ∨ (&or;)
 
 
 .btn-pause {
-    background-color: rgb(255, 187, 0);
+    background-color: rgb(72, 59, 255);
     color: white;
     
 }
@@ -160,7 +160,7 @@ oppure i caratteri ∧ (&and;) e ∨ (&or;)
 
 
 .btn-pause:hover {
-    background-color: rgb(247, 162, 4);
+    background-color: rgb(91, 79, 255);
     box-shadow: 1px 1px 5px black;
 }
 
