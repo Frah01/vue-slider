@@ -15,7 +15,6 @@
 
         <div class="container">
             <div class="slider-wrapper" tabindex="0">
-
                 <div class="item" >
                     <img  @mouseover="stopAutoplay()" @mouseleave="startAutoplay()" :src="slides[activeItem].image">
                     <div class="text">
@@ -36,11 +35,11 @@
                     <div class="thumb" v-for="(images, index) in slides" :class="(activeItem === index ) ? 'active' : '' ">
                         <img :src="images.image" alt="thumbnail" @click="changeImage(index)"/>
                 </div>
-                <div class="buttons" >
-                    <button @click="startAutoplay()"  class="btn btn-play" ><i class="fa-solid fa-play"></i></button>
-                    <button @click="stopAutoplay()" class="btn btn-pause"><i class="fa-solid fa-pause"></i></button>
-                </div>
             </div>
+        </div>
+        <div class="buttons" >
+            <button @click="startAutoplay()"  class="btn btn-play" ><i class="fa-solid fa-play"></i></button>
+            <button @click="stopAutoplay()" class="btn btn-pause"><i class="fa-solid fa-pause"></i></button>
         </div>
     </div>
    
