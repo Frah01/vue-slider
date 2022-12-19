@@ -28,8 +28,11 @@
 
                 <div class="thumbs" >
                     <div class="prev" @click="prev()">
+                        <i class="fa-solid fa-angles-up"></i>
                     </div>
-                    <div class="next" @click="next()"></div>
+                    <div class="next" @click="next()">
+                        <i class="fa-solid fa-angles-down"></i>
+                    </div>
                     <div class="thumb" v-for="(images, index) in slides" :class="(activeItem === index ) ? 'active' : '' ">
                         <img :src="images.image" alt="thumbnail" @click="changeImage(index)"/>
                 </div>
