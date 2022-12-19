@@ -51,7 +51,7 @@ let autoplay= null;
         startAutoplay(){
             this.autoplay= setInterval(()=> {
                 this.next()
-            },1000)
+            },3000)
         },
         stopAutoplay() {
             clearInterval(this.autoplay);
