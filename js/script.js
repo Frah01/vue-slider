@@ -37,8 +37,14 @@ const { createApp } = Vue
         },
         next() {
             this.activeItem++
-            if(this.activeItem > slides.length -1){
+            if(this.activeItem > this.slides.length -1){
                 this.activeItem = 0
+            }
+        },
+        prev(){
+            this.activeItem--
+            if(this.activeItem < 0){
+                this.activeItem = this.slides.length -1;
             }
         }
     }

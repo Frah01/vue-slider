@@ -20,16 +20,13 @@
                     <div class="text">
                         <h3  v-text="slides[activeItem].title" ></h3>
                         <p  v-text="slides[activeItem].text">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit
-                            tempore aliquid deleniti aut
-                            veniam inventore eligendi ex ad ullam, cumque provident totam omnis, magnam dolores dolorum
-                            corporis.
+                            
                         </p>
                     </div>
                 </div>
 
                 <div class="thumbs" >
-                    <div class="prev">
+                    <div class="prev" @click="prev()">
                     </div>
                     <div class="next" @click="next()"></div>
                     <div class="thumb active">
