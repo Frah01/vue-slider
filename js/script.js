@@ -3,7 +3,7 @@ const { createApp } = Vue
   createApp({
     data() {
       return {
-        activeImage: 0,
+        activeItem: 0,
          slides :
             [
                 {
