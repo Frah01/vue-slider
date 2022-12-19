@@ -33,7 +33,13 @@ const { createApp } = Vue
     methods : {
         changeImage(index)
         {
-            this.activeImage = index;
+            this.activeItem = index;
+        },
+        next() {
+            this.activeItem++
+            if(this.activeItem > slides.length -1){
+                this.activeItem = 0
+            }
         }
     }
   }).mount('#app')
