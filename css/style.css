@@ -76,8 +76,10 @@ body {
     transform: translate(-50%);
     cursor: pointer;
     z-index: 999;
-    text-align: center;
-    color: white
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .prev:hover, .next:hover {
     box-shadow:
